@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:noviindus_ayurvedic_patient_app/core/color_const.dart';
 import 'package:noviindus_ayurvedic_patient_app/core/text_constants.dart';
 import 'package:noviindus_ayurvedic_patient_app/core/text_styles.dart';
@@ -56,6 +57,7 @@ class HomeScreen extends StatelessWidget {
           buttonText: AppText.registerNow,
           ontap: () {
             // onTap action
+            context.push('/registerScreen');
           },
         ),
       ),

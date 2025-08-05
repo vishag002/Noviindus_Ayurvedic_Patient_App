@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:noviindus_ayurvedic_patient_app/views/auth/login_screen.dart';
 import 'package:noviindus_ayurvedic_patient_app/views/splash_screen.dart';
 import 'package:noviindus_ayurvedic_patient_app/views/user%20screens/home_screen.dart';
+import 'package:noviindus_ayurvedic_patient_app/views/user%20screens/register_screen.dart';
 
 final GoRouter appRouter = GoRouter(
   routes: <RouteBase>[
@@ -30,6 +31,15 @@ final GoRouter appRouter = GoRouter(
       name: 'login',
       builder: (BuildContext context, GoRouterState state) {
         return LoginScreen();
+      },
+    ),
+
+    //Register Screen
+    GoRoute(
+      path: '/registerScreen',
+      name: 'registerScreen',
+      builder: (BuildContext context, GoRouterState state) {
+        return RegisterScreen();
       },
     ),
   ],
